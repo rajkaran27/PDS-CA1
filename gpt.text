@@ -1,0 +1,23 @@
+Line Plot: You can plot the resale price over time (month) to visualize the trend of prices.
+
+Bar Chart: Create a bar chart to compare the average resale prices of different flat types or towns.
+
+Histogram: Plot a histogram to analyze the distribution of floor areas (floor_area_sqm) or remaining leases.
+
+Scatter Plot: Visualize the relationship between the floor area (x-axis) and resale price (y-axis) for different flat types. DONE
+
+Pie Chart: Show the percentage distribution of flat models. DONE
+
+Box Plot: Create box plots to examine the distribution of resale prices for different towns or flat types.
+
+Median Rent Analysis: Calculate the median rent for each quarter and analyze the trends over time. Visualize the changes in median rent for different flat types across different towns.
+
+Affordability Analysis: Investigate the affordability of rental properties in different towns and flat types. Calculate the percentage of rentals that fall within certain affordability ranges (e.g., 30% of household income) and compare the affordability across towns and flat types.
+
+Town Comparison: Compare the median rents and affordability levels between different towns. Identify towns with the highest and lowest median rents and examine the factors contributing to these variations.
+
+Flat Type Comparison: Analyze the median rents and affordability levels for different flat types (1-RM, 2-RM, 3-RM, etc.). Determine which flat types are more affordable and popular in different towns.
+
+Relationship between Median Rent and Resale Prices: Explore the relationship between median rent and resale prices for different flat types. Determine if there is any correlation between these variables and how they impact the rental market.
+
+Rental Approval Analysis: Merge the rental dataset with the flat resale dataset and analyze the rental approval rates for different towns and flat types. Determine if there are any relationships between rental prices and the likelihood of approval.
