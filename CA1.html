@@ -14590,6 +14590,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Title-of-data-analysis:">Title of data analysis:<a class="anchor-link" href="#Title-of-data-analysis:">&#182;</a></h3><h2 id="Which-flat-type-offers-the-most-favorable-investment-opportunity-for-rental-purposes-in-a-specific-town-within-a-price-range-of-500000SGD?">Which flat type offers the most favorable investment opportunity for rental purposes in a specific town within a price range of 500000SGD?<a class="anchor-link" href="#Which-flat-type-offers-the-most-favorable-investment-opportunity-for-rental-purposes-in-a-specific-town-within-a-price-range-of-500000SGD?">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>importing neccesary packages.</p>
 
 </div>
@@ -14652,6 +14663,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>List of URLs of dataset</p>
+<ul>
+<li>https://data.gov.sg/dataset/resale-flat-prices</li>
+<li>https://data.gov.sg/dataset/median-rent-by-town-and-flat-type</li>
+<li>https://data.gov.sg/dataset/renting-out-of-flats</li>
+<li>https://data.gov.sg/dataset/school-directory-and-information</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14757,6 +14785,55 @@ The average price of a 1 Room flat is 196904.2 SGD.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Nature-Of-The-Dataset:">Nature Of The Dataset:<a class="anchor-link" href="#Nature-Of-The-Dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The CSV file "resale-flat-prices-based-on-registration-date-from-jan-2017-onwards" contains data on resale flat transactions in Singapore from January 2017 to the present. The data includes the following columns:</p>
+<ul>
+<li>Month: The month in which the resale transaction took place.</li>
+<li>Town: The town in which the resale flat is located.</li>
+<li>Flat type: The type of resale flat, such as 3-room, 4-room, 5-room etc.</li>
+<li>Block: The block number of the resale flat.</li>
+<li>Street name: The street name of the resale flat.</li>
+<li>Storey range: The storey range of the resale flat, such as 1-10, 11-20, 21-30 etc.</li>
+<li>Floor area (sqm): The floor area of the resale flat in square meters.</li>
+<li>Flat model: The model of the resale flat.</li>
+<li>Lease commence date: The date on which the lease on the resale flat commenced.</li>
+<li>Remaining lease: The number of years, months, and days of lease remaining on the resale flat.</li>
+<li>Resale price: The price at which the resale flat was sold.</li>
+</ul>
+<p>The dataset contains a total of 154511 rows of data. The data is relatively clean and well-formatted. However, there are a few peculiarities that should be noted.</p>
+<ul>
+<li>The data does not include information on the age of the resale flat. This information would be useful for understanding the relationship between the age of a flat and its resale price.</li>
+<li>The data does not include information on the number of bedrooms and bathrooms in the resale flat. This information would also be useful for understanding the relationship between the number of bedrooms and bathrooms in a flat and its resale price.</li>
+<li>The data does not include information on the amenities and facilities that are located near the resale flat. This information would be useful for understanding the relationship between the amenities and facilities near a flat and its resale price.</li>
+</ul>
+<p>I analyzed the dataset using the following steps:</p>
+<ol>
+<li>I imported the data into a Python Numpy Array.</li>
+<li>I performed a statistical analysis of the data, including calculating the mean, of the resale prices by town, flat type, and other factors.</li>
+<li>I created visualizations of the data, such as line chart, bar graph, pie chart and scatterplots.</li>
+<li>I interpreted the results of the analysis to identify trends and patterns in the data.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Median-rent-by-town-and-flat-type-dataset.">Median rent by town and flat type dataset.<a class="anchor-link" href="#Median-rent-by-town-and-flat-type-dataset.">&#182;</a></h3>
 </div>
 </div>
@@ -14836,6 +14913,48 @@ There is no data available for the average rental price of a 1 room flat.
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Nature-Of-The-Dataset:">Nature Of The Dataset:<a class="anchor-link" href="#Nature-Of-The-Dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The CSV file "median-rent-by-town-and-flat-type" contains data on the median rent by town and flat type over various quarters. The data includes the following columns:</p>
+<ul>
+<li>Quarter: The quarter in which the rent was recorded.</li>
+<li>Town: The town in which the rent was recorded.</li>
+<li>Flat type: The type of flat, such as HDB or condominium.</li>
+<li>Median rent: The median rent for the quarter, town, and flat type.</li>
+</ul>
+<p>The dataset contains a total of 11121 rows of data. The data is relatively clean and well-formatted. However, there are a few peculiarities that should be noted.</p>
+<ul>
+<li>There are a few rows where the median rent is missing (i.e. "na", "-"). There is no data in the entire dataset which shows the median rent for 1 room flats.</li>
+<li>From the start of 2016-Q4 the town names have extra white space beside them hence making this dataset really hard to work with</li>
+<li>The median rent for some quarters is higher than the median rent for previous quarters. This may be due to a number of factors, such as an increase in demand for housing or an increase in the cost of construction.</li>
+</ul>
+<p>I analyzed the dataset using the following steps:</p>
+<ol>
+<li>I imported the data into a Python Numpy Array.</li>
+<li>I performed a statistical analysis of the data, including calculating the mean, of the resale prices by town, flat type, and other factors.</li>
+<li>I created visualizations of the data, such as line chart, bar graph and histogram.</li>
+<li>I interpreted the results of the analysis to identify trends and patterns in the data.</li>
+</ol>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14943,6 +15062,45 @@ The average rental price of a 1 Room flat is 1383.33 SGD.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Nature-Of-The-Dataset:">Nature Of The Dataset:<a class="anchor-link" href="#Nature-Of-The-Dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The CSV file "renting-out-of-flats" contains data on the monthly rental prices of flats in Singapore. The data includes the following columns:</p>
+<ul>
+<li>Rent Approval Date: The date on which the rental approval was granted.</li>
+<li>Town: The town in which the flat is located.</li>
+<li>Block: The block number of the flat.</li>
+<li>Street Name: The street name of the flat.</li>
+<li>Flat Type: The type of flat, such as HDB, condominium, or apartment.</li>
+<li>Monthly Rent: The monthly rent of the flat.</li>
+</ul>
+<p>The dataset contains a total of 85787 rows of data. The data is relatively clean and well-formatted.</p>
+<p>I analyzed the dataset using the following steps:</p>
+<ol>
+<li>I imported the data into a Python Numpy Array.</li>
+<li>I performed a statistical analysis of the data, including calculating the mean, of the resale prices by town, flat type, and other factors.</li>
+<li>I created visualizations of the data, such as line chart and bar graphs.</li>
+<li>I interpreted the results of the analysis to identify trends and patterns in the data.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="General-Information-of-Schools-Dataset.">General Information of Schools Dataset.<a class="anchor-link" href="#General-Information-of-Schools-Dataset.">&#182;</a></h3>
 </div>
 </div>
@@ -15001,7 +15159,63 @@ There are 27 towns in this dataset.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Title-of-data-analysis:">Title of data analysis:<a class="anchor-link" href="#Title-of-data-analysis:">&#182;</a></h3><h2 id="Which-flat-type-offers-the-most-favorable-investment-opportunity-for-rental-purposes-in-a-specific-town-within-a-price-range-of-500000SGD?">Which flat type offers the most favorable investment opportunity for rental purposes in a specific town within a price range of 500000SGD?<a class="anchor-link" href="#Which-flat-type-offers-the-most-favorable-investment-opportunity-for-rental-purposes-in-a-specific-town-within-a-price-range-of-500000SGD?">&#182;</a></h2>
+<h3 id="Nature-Of-The-Dataset:">Nature Of The Dataset:<a class="anchor-link" href="#Nature-Of-The-Dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The CSV file "general-information-of-schools" contains data on general information of schools in Singapore. The data includes the following columns:</p>
+<ul>
+<li>School Name: The name of the school</li>
+<li>URL Address: The URL address of the school's website</li>
+<li>Address: The physical address of the school</li>
+<li>Postal Code: The postal code of the school</li>
+<li>Telephone Number: The telephone number of the school</li>
+<li>Fax Number: The fax number of the school</li>
+<li>Email Address: The email address of the school</li>
+<li>DGP Code: The DGP code of the school</li>
+<li>Zone Code: The zone code of the school</li>
+<li>Type Code: The type code of the school</li>
+<li>Nature Code: The nature code of the school</li>
+<li>Session Code: The session code of the school</li>
+<li>Main Level Code: The main level code of the school</li>
+<li>SAP Ind: Indicates whether the school is a SAP school</li>
+<li>Autonomous Ind: Indicates whether the school is an autonomous school</li>
+<li>Gifted Ind: Indicates whether the school is a gifted school</li>
+<li>IP Ind: Indicates whether the school is an IP school</li>
+<li>Mother Tongue 1 Code: The mother tongue language code of the first language taught at the school</li>
+<li>Mother Tongue 2 Code: The mother tongue language code of the second language taught at the school</li>
+<li>Mother Tongue 3 Code: The mother tongue language code of the third language taught at the school</li>
+</ul>
+<p>The dataset contains a total of 346 rows of data. The data is relatively clean and well-formatted. However, there are a few peculiarities that should be noted.</p>
+<ul>
+<li>Some of the school names contain special characters, such as spaces and hyphens.</li>
+</ul>
+<p>I analyzed the dataset using the following steps:</p>
+<ol>
+<li>I imported the data into a Python Numpy DataFrame.</li>
+<li>I performed a statistical analysis of the data, including calculating the mean, of the resale prices by town, flat type, and other factors.</li>
+<li>I created visualizations of the data, such as bar graph, as well as a stacked bar graph.</li>
+<li>I interpreted the results of the analysis to identify trends and patterns in the data.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Resale-flat-prices-based-on-registration-date-from-Jan-2017-onwards-dataset">Resale flat prices based on registration date from Jan 2017 onwards dataset<a class="anchor-link" href="#Resale-flat-prices-based-on-registration-date-from-Jan-2017-onwards-dataset">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15687,6 +15901,17 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Median-rent-by-town-and-flat-type-dataset">Median rent by town and flat type dataset<a class="anchor-link" href="#Median-rent-by-town-and-flat-type-dataset">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="How-much-do-median-rental-prices-vary-in-Serangoon,-Bedok,-and-Jurong-East?">How much do median rental prices vary in Serangoon, Bedok, and Jurong East?<a class="anchor-link" href="#How-much-do-median-rental-prices-vary-in-Serangoon,-Bedok,-and-Jurong-East?">&#182;</a></h3>
 </div>
 </div>
@@ -16074,6 +16299,17 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Renting-out-of-flats-dataset">Renting out of flats dataset<a class="anchor-link" href="#Renting-out-of-flats-dataset">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="How-do-the-average-rental-prices-of-4-room-flats-vary-across-different-streets-in-Serangoon?">How do the average rental prices of 4 room flats vary across different streets in Serangoon?<a class="anchor-link" href="#How-do-the-average-rental-prices-of-4-room-flats-vary-across-different-streets-in-Serangoon?">&#182;</a></h3>
 </div>
 </div>
@@ -16266,6 +16502,17 @@ jp-needs-light-background
 <p>Additionally, we utilized a line graph to determine the optimal time for renting out a flat. Fortunately, the average rental price for 4-room flats in Serangoon has recently peaked, indicating that the present moment presents an excellent opportunity for renting out a property. For those intending to rent, it is advisable to exercise some patience, as prices may potentially undergo a downward trend.</p>
 <p>Considering my own intention to purchase a flat, I would personally opt for a property situated on Serangoon Avenue 1. This particular street boasts a high average rental price, making it an attractive choice for investment. Given the current rental market conditions, it would be prudent to promptly rent out the acquired property, as the average rental price remains near its peak at 3400 SGD.</p>
 
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="General-information-of-schools-dataset">General information of schools dataset<a class="anchor-link" href="#General-information-of-schools-dataset">&#182;</a></h2>
 </div>
 </div>
 </div>
