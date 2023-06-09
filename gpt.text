@@ -1,23 +1,27 @@
-Line Plot: You can plot the resale price over time (month) to visualize the trend of prices.
+enumerate() is a built-in Python function used to iterate over a sequence (e.g., a list, tuple, or array) while also keeping track of the index of each element. In the code, enumerate(bp['boxes']) is used to iterate over the boxes in the boxplot.
 
-Bar Chart: Create a bar chart to compare the average resale prices of different flat types or towns.
+The loop for i, box in enumerate(bp['boxes']): assigns each box in the boxplot to the variable box and its corresponding index to the variable i.
 
-Histogram: Plot a histogram to analyze the distribution of floor areas (floor_area_sqm) or remaining leases.
+Inside the loop, the following actions are performed:
 
-Scatter Plot: Visualize the relationship between the floor area (x-axis) and resale price (y-axis) for different flat types. DONE
+x = box.get_xdata() retrieves the x-coordinates of the box and stores them in the x variable.
 
-Pie Chart: Show the percentage distribution of flat models. DONE
+y = box.get_ydata() retrieves the y-coordinates of the box and stores them in the y variable.
 
-Box Plot: Create box plots to examine the distribution of resale prices for different towns or flat types.
+whiskers = bp['whiskers'] retrieves the whiskers of the boxplot and stores them in the whiskers variable.
 
-Median Rent Analysis: Calculate the median rent for each quarter and analyze the trends over time. Visualize the changes in median rent for different flat types across different towns.
+whisker_x = [whiskers[i*2].get_xdata()[1], whiskers[i*2 + 1].get_xdata()[1]] retrieves the x-coordinates of the whiskers corresponding to the current box. The index i*2 is used to access the left whisker, and i*2 + 1 is used to access the right whisker. The [1] index is used to select the upper coordinate of each whisker.
 
-Affordability Analysis: Investigate the affordability of rental properties in different towns and flat types. Calculate the percentage of rentals that fall within certain affordability ranges (e.g., 30% of household income) and compare the affordability across towns and flat types.
+whisker_y_min = whiskers[i*2].get_ydata()[1] retrieves the y-coordinate of the lower end of the left whisker.
 
-Town Comparison: Compare the median rents and affordability levels between different towns. Identify towns with the highest and lowest median rents and examine the factors contributing to these variations.
+whisker_y_max = whiskers[i*2 + 1].get_ydata()[1] retrieves the y-coordinate of the lower end of the right whisker.
 
-Flat Type Comparison: Analyze the median rents and affordability levels for different flat types (1-RM, 2-RM, 3-RM, etc.). Determine which flat types are more affordable and popular in different towns.
+label_x = x.mean() calculates the mean of the x-coordinates of the box, representing the center position for the label.
 
-Relationship between Median Rent and Resale Prices: Explore the relationship between median rent and resale prices for different flat types. Determine if there is any correlation between these variables and how they impact the rental market.
+label_y_min = whisker_y_min assigns the y-coordinate of the lower end of the left whisker to label_y_min.
 
-Rental Approval Analysis: Merge the rental dataset with the flat resale dataset and analyze the rental approval rates for different towns and flat types. Determine if there are any relationships between rental prices and the likelihood of approval.
+label_y_max = whisker_y_max assigns the y-coordinate of the lower end of the right whisker to label_y_max.
+
+plt.text(label_x, label_y_min, f'Min: {label_y_min:.0f}', ha='center', va='bottom') adds a label to the plot using the plt.text() function. The label displays the minimum value (label_y_min) at the center position (label_x) with the text formatted as "Min: [value]". The ha='center' and va='bottom' parameters specify the horizontal and vertical alignment of the label, respectively.
+
+plt.text(label_x, label_y_max, f'Max: {label_y_max:.0f}', ha='center', va='top') adds a label to the plot for the maximum value using a similar approach.
