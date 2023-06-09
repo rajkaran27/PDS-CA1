@@ -25,3 +25,60 @@ label_y_max = whisker_y_max assigns the y-coordinate of the lower end of the rig
 plt.text(label_x, label_y_min, f'Min: {label_y_min:.0f}', ha='center', va='bottom') adds a label to the plot using the plt.text() function. The label displays the minimum value (label_y_min) at the center position (label_x) with the text formatted as "Min: [value]". The ha='center' and va='bottom' parameters specify the horizontal and vertical alignment of the label, respectively.
 
 plt.text(label_x, label_y_max, f'Max: {label_y_max:.0f}', ha='center', va='top') adds a label to the plot for the maximum value using a similar approach.
+
+
+SCHOOL
+
+serangoon = data_school_info[data_school_info['dgp_code'] == 'SERANGOON']: This line extracts the subset of data from the data_school_info DataFrame where the 'dgp_code' column has the value 'SERANGOON'. It filters the DataFrame to include only the schools in the Serangoon area.
+
+school_names = np.unique(serangoon['school_name']): This line retrieves the unique values of the 'school_name' column in the serangoon DataFrame. It creates an array of unique school names in Serangoon.
+
+main_level= np.unique(serangoon['mainlevel_code']): This line retrieves the unique values of the 'mainlevel_code' column in the serangoon DataFrame. It creates an array of unique main level codes for the schools in Serangoon.
+
+num_schools = []: This line initializes an empty list to store the number of schools for each main level.
+
+for main in main_level: ...: This is a loop that iterates over each unique main level code in main_level.
+
+num_schools.append(len(serangoon[serangoon['mainlevel_code'] == main])): This line calculates the number of schools in Serangoon that have the current main level code (main). It filters the serangoon DataFrame for schools with the specific main level code and retrieves the length of the filtered DataFrame. The count is then appended to the num_schools list.
+
+plt.figure(figsize=(20, 10)): This line creates a new figure object with a specified size of 20 inches by 10 inches.
+
+bottom = np.zeros(len(main_level)): This line initializes an array of zeros with the same length as the main_level array. It will be used to keep track of the bottom position of each bar in the stacked bar chart.
+
+for school_name in school_names: ...: This is a loop that iterates over each unique school name in school_names.
+
+school_data = serangoon[serangoon['school_name'] == school_name]: This line filters the serangoon DataFrame to include only the rows where the 'school_name' column matches the current school_name in the loop. It creates a subset of data for the specific school.
+
+counts = []: This line initializes an empty list to store the count of schools for each main level code within the specific school.
+
+for code in main_level: ...: This is a nested loop that iterates over each unique main level code in main_level within the specific school.
+
+count = len(school_data[school_data['mainlevel_code'] == code]): This line filters the school_data DataFrame to include only the rows where the 'mainlevel_code' column matches the current code in the nested loop. It calculates the count by retrieving the length of the filtered DataFrame.
+
+counts.append(count): This line appends the count of schools for the current main level code to the counts list.
+
+plt.bar(main_level, counts, bottom=bottom, label=school_name): This line plots a stacked bar chart for the specific school, where the x-axis values are the main level codes (main_level), the heights of the bars represent the counts of schools (counts), and the bottom parameter specifies the bottom position of each bar in the stack. The label parameter assigns the school name to the bars.
+
+bottom += counts: This line updates the bottom array by adding the counts of schools. It ensures that the next stacked bars start from the top of the previous bars.
+
+plt.xlabel('Type Code',fontsize=15): This line sets the label for the x-axis of the plot.
+
+plt.ylabel('Number of Schools',fontsize=15): This line sets the label for the y-axis of the plot.
+
+plt.ylim(0,6): This line sets the limits for the y-axis, restricting the range from 0 to 6.
+
+plt.title('Schools in Serangoon by Type Code',fontsize=20): This line sets the title of the plot.
+
+plt.grid(color="gray",alpha=0.7): This line adds a grid to the plot with gray lines.
+
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5)): This line adds a legend to the plot, placing it at the left center position outside the plot area.
+
+plt.show(): This line displays the plot on the screen.
+
+The code overall extracts the relevant data, calculates the counts of schools for each main level within each school, and then creates a stacked bar chart using Matplotlib to visualize the data.
+
+
+
+
+
+
